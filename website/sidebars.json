@@ -1,2 +1,39 @@
 {
+  "docs": {
+    "Sipp": [
+      "docs"
+    ],
+    "Getting Started": [
+      "getting-started"
+    ],
+    "Guides": [
+      "guides"
+    ],
+    "Concepts": [
+      "concepts/typescript",
+      "concepts/dependency-injection",
+      "concepts/decorators"
+    ],
+    "Controllers": [
+      "controllers/controllers",
+      "controllers/routing"
+    ],
+    "Models": [
+      "db/connections",
+      "db/models",
+      "db/migrations",
+      "db/seeds",
+      "db/transactions"
+    ],
+    "Views": [
+      "views/templating",
+      "views/composing"
+    ],
+    "Services": [
+      "services/services"
+    ],
+    "Middleware": [
+      "middleware/middleware"
+    ]
+  }
 }
