@@ -1,39 +1,30 @@
 {
   "docs": {
     "Sipp": [
-      "docs"
+      "docs",
+      "intro/system-reqs",
+      "intro/installation"
     ],
-    "Getting Started": [
-      "getting-started"
+    "Overview": [
+      "overview/getting-started",
+      "overview/typescript",
+      "overview/controllers-routing",
+      "overview/middleware",
+      "overview/models",
+      "overview/views",
+      "overview/dependency-injection"
     ],
-    "Guides": [
-      "guides"
-    ],
-    "Concepts": [
-      "concepts/typescript",
-      "concepts/dependency-injection",
-      "concepts/decorators"
-    ],
-    "Controllers": [
-      "controllers/controllers",
-      "controllers/routing"
-    ],
-    "Models": [
+    "Database": [
       "db/connections",
-      "db/models",
       "db/migrations",
       "db/seeds",
       "db/transactions"
     ],
-    "Views": [
-      "views/templating",
-      "views/composing"
-    ],
     "Services": [
       "services/services"
     ],
-    "Middleware": [
-      "middleware/middleware"
+    "Etc": [
+      "etc/logging"
     ]
   }
 }

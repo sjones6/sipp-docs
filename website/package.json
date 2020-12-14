@@ -10,5 +10,9 @@
   },
   "devDependencies": {
     "docusaurus": "^1.14.6"
+  },
+  "dependencies": {
+    "@docusaurus/preset-classic": "^2.0.0-alpha.69",
+    "remark-admonitions": "^1.2.1"
   }
 }
