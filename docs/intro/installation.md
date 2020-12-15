@@ -4,14 +4,25 @@ title: Installation
 sidebar_label: Installation
 ---
 
-> Sipp is currently under development in a private repository. If you want access, email Spencer at hi@sipp.dev and we'll hook you up!
+## 1 Minute Startup
 
+In 1 minute, you can have a bare-bones Sipp application up and running. If you prefer something with more batteries included, jump down to the next section.
+
+If you're in a rush, here's the fastest way to get going (requires a npm v6 or greater):
+
+```bash
+npm init sipp {project-name}
+```
+
+This will bootstrap a new project, install the dependencies, and even do your first build.
+
+You can then open up the project directory and run `npm run dev` to start your development server.
+
+By default, your application should be running on [`http://localhost:3000`](http://localhost:3000).
 
 ## With the Starter Kit
 
-The fastest way to get started is to clone the starter kit.
-
-The start kit includes local authentication with passport, database migrations and seed examples, and a few views.
+The start kit includes local authentication with passport, database migrations and seed examples, a couple of controllers, and a few views.
 
 #### 1. **Clone the repository**
 

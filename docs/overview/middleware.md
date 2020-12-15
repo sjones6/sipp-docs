@@ -15,7 +15,7 @@ This is important because it can interoperate with any express middleware packag
 One addition that Sipp adds on top of express middleware, is the ability to use Promise-based middleware functions. Actually, because of this, you can use any number of parameters:
 
 ```typescript
-export function reqLoggingMiddleware = (req): void => {
+export const reqLoggingMiddleware = (req): void => {
   req.logger.info('received request');
 }
 ```
