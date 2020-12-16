@@ -7,6 +7,14 @@
 
 /* your custom css */
 
+.post article a {
+  text-decoration: underline;
+  font-weight: 500;
+}
+.post article a:hover {
+  opacity: 80%;
+}
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 

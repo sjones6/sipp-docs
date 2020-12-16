@@ -3,7 +3,8 @@
     "Sipp": [
       "docs",
       "intro/system-reqs",
-      "intro/installation"
+      "intro/installation",
+      "intro/configuration"
     ],
     "Overview": [
       "overview/getting-started",
@@ -12,6 +13,7 @@
       "overview/middleware",
       "overview/models",
       "overview/views",
+      "overview/validation",
       "overview/dependency-injection"
     ],
     "Database": [
