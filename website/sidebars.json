@@ -10,20 +10,20 @@
       "overview/getting-started",
       "overview/typescript",
       "overview/controllers-routing",
-      "overview/middleware",
       "overview/models",
       "overview/views",
+      "overview/middleware",
+      "overview/dependency-injection",
+      "overview/providers",
       "overview/validation",
-      "overview/dependency-injection"
+      "overview/sessions",
+      "overview/security"
     ],
     "Database": [
       "db/connections",
       "db/migrations",
       "db/seeds",
       "db/transactions"
-    ],
-    "Services": [
-      "services/services"
     ],
     "Etc": [
       "etc/logging"

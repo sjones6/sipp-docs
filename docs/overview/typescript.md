@@ -38,13 +38,13 @@ Decorators are also used to power
 
 ## JSX
 
-> Contrary to popular opinion, React popularized JSX but JSX is not bound to React.
+> Contrary to popular opinion, React popularized JSX but you can use JSX outside of React.
 
 Sipp templates are composed using JSX, which is compiled natively using the TypeScript compiler's built-in ability to handle JSX.
 
 This means that your templates are compiled into JS functions at build time! 
 
-Your views are also completely TypeSafe, and you are able to strongly type the relationship between your controllers and views.
+Your views are also completely type-safe, and you are able to strongly type the relationship between your controllers and views.
 
 ## Reflection
 

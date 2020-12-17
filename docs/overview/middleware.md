@@ -4,17 +4,19 @@ title: Middleware
 sidebar_label: Middleware
 ---
 
-Middleware functions are a central feature in express applications, and allow you to access and transform the incoming request.
+Middleware functions are a central feature in [express applications](https://expressjs.com/en/guide/writing-middleware.html), and allow you to access and transform the incoming request.
 
 Sipp middleware are fully compatible with basic express middleware functions `(req, res, next)` style.
 
 This is important because it can interoperate with any express middleware package (indeed, some of the core functionalities of sipp are provided this way).
 
+> Note! If you're not familiar with express middleware, take a look at [express's documentation](https://expressjs.com/en/guide/writing-middleware.html).
+
 ## Writing Middleware
 
-### Promise-Based
+### All Parameters are Optional
 
-One addition that Sipp adds on top of express middleware, is the ability to use Promise-based middleware functions. Actually, because of this, you can accept any number of parameters and return a promise or simply perform asynchronouc code:
+You can accept any number of parameters and return a promise or simply perform synchronouc code:
 
 ```typescript
 import { Request } from 'express';
@@ -26,11 +28,26 @@ export function reqLoggingMiddleware(req: Request): void {
 
 This allows you to keep your middleware functions clean.
 
+### Promise-Based
+
+Middleware functions can  use Promises,
+
+```typescript
+import { Request } from 'express';
+import { Tenant } from '@app/models';
+
+export function fetchTenant(req: Request): void {
+  req.tenant = await Tenant.query.find('slug', req.subdomains[0]);
+}
+```
+
+The `next()` call is implicit here. If the promise is thrown, it is passed along into error handling - otherwise, the next middleware function runs when the previous one resolves.
+
 ### Middleware Classes
 
 Sipp also exposes a middleware class as a base export.
 
-The primary purpose of the middleware class is to allow for middleware to access dependency injection.
+The primary purpose of the middleware class is to allow for middleware to take advantage of [dependency injection](dependency-injection.md).
 
 ```typescript
 import { Middleware, Provide, Body } from 'sipp';

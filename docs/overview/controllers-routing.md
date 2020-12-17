@@ -296,7 +296,7 @@ export class UsersController extends Controller {
 }
 ```
 
-If you require more custom handling than simply newing up an instance of your class, take a look at registering your [own service provider](services/services.md).
+If you require more custom handling than simply newing up an instance of your class, take a look at registering your [own service provider](providers.md).
 
 ### Models
 
@@ -405,7 +405,7 @@ export class UserController extends Controller {
 
 ## Helper Methods
 
-The controller providers a number of helpful methods on the prototype to help you handle requests.
+The controller provides a number of helpful methods on the prototype to help you handle requests.
 
 ### Redirects
 

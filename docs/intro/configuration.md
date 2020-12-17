@@ -30,6 +30,8 @@ export const config: IAppConfig = {
    * Settings for session management.
    *
    * See https://www.npmjs.com/package/express-session for options.
+   * 
+   * For production, you will want to provide a session storage mechanism here.
    */
   session: {
     secret: process.env.SESSION_SECRET,
@@ -45,6 +47,38 @@ export const config: IAppConfig = {
   csrf: {
     cookie: true,
   },
+
+  /**
+   * Base Path
+   * 
+   * A url prefix that is applied to every route - e.g., /v1
+   */
+  basePath?: '/',
+
+  /**
+   * The port to listen on - defaults to 3000
+   */
+  port?: 3000,
+
+  /**
+   * The mode for the logger
+   * 
+   * Production mode produces machine parseable logs, and also writes to a temporary file
+   * development mode produces human friendly console logs
+   */
+  logMode?: 'production' | 'development' | string;
+
+  /**
+   * Completely override with a custom logger.
+   * 
+   * Must implement the logger interface
+   */
+  logger?: Logger,
+
+  /**
+   * An optional service name that shows up in the production logs
+   */
+  serviceName?: string
 };
 ```
 

@@ -31,9 +31,9 @@ export class User extends Model {
 
 ## Defining Relationships
 
-[ObjectionJS](https://vincit.github.io/objection.js/guide/relations.html#examples) allows you to define relationships with other models, which allows you to query relationships using ORM methods:
+[ObjectionJS](https://vincit.github.io/objection.js/guide/relations.html#examples) allows you to define relationships with other models, which allows you to query relationships using ORM methods.
 
-In order to do this, you'll want to fill com
+In order to do this, you'll want to follow the pattern of exporting all of the models from a single point, and referencing other models using this commong import (example below).
 
 ### Circular Relationships
 
@@ -81,7 +81,7 @@ export class User extends Model {
 
 ### Eager Relationships
 
-Sipp provides a method, `Model.load()` to query a model and automatically load all of it's relationships.
+Sipp provides a static method `Model.load()` to query a model and automatically load all of it's relationships.
 
 Sometimes you might not want to load *every* relationship when eager loading.
 
@@ -160,7 +160,6 @@ Then, you can call `modelInstance.validate()` at any point and receive back a `V
 Validations are provided via the [class-validator](https://github.com/typestack/class-validator) package. There are large number of validations available. 
 
 [See the complete list](https://github.com/typestack/class-validator#validation-decorators) of available validation decorators.
-
 
 ## Querying
 

@@ -13,3 +13,5 @@ Sipp is only tested with Node 12 and greater, so prefer to use the current LTS a
 Node 12 or greater
 
 npm v6 or greater, or yarn
+
+For local development, Sipp defaults to using Sqlite, which can be used just by pulling in the required packages and binaries in via `npm`. In production, you may wish to use another compatible database provider.
